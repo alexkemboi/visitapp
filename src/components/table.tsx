@@ -2,7 +2,7 @@ import * as React from 'react';
 import { DataGrid, GridRowsProp, GridToolbar, GridColDef } from '@mui/x-data-grid';
 import getServerSideProps from '@/app/api/getuser';
 import router from 'next/router';
-import getdata from '@/app/api/route';
+
 import { useState } from 'react';
 
 const s: GridRowsProp = [
@@ -81,9 +81,15 @@ export default function DataGridDemo() {
     }])
     async function getvistorsdata() {
 
-        const response = await getdata("visitors")
-        if (Array.isArray(response.props.data)) {
-            const rows: VisitorRowsArray = response.props.data.map((row: any) => ({
+
+        const response = await fetch(`http://localhost:3000/api/getdata?table=visitors`).then(res => res.json())
+            .then(res => {
+                console.log(res.message)
+                return res.message
+            });
+
+        if (Array.isArray(response)) {
+            const rows: VisitorRowsArray = response.map((row: any) => ({
                 id: row.id,
                 VisitorID: row.VisitorID,
                 FirstName: row.FirstName,
@@ -101,7 +107,7 @@ export default function DataGridDemo() {
 
             setRows(rows);
         } else {
-            console.error("Unexpected data format:", response.props.data);
+            console.error("Unexpected data format:", response);
         }
 
     }

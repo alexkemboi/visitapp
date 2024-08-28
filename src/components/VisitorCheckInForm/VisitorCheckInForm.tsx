@@ -95,7 +95,7 @@ export default function VisitorCheckInForm() {
                         >
                             <option value="" disabled>Select ID Type</option>
                             <option value="Passport">Passport</option>
-                            <option value="Driver's License">Driver's License</option>
+                            <option value="Drivers License">Drivers License</option>
                             <option value="National ID">National ID</option>
                         </select>
                     </div>

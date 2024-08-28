@@ -35,7 +35,7 @@ const TopCards = () => {
 
             <div className='lg:col-span-4 col-span-1 shadow-lg bg-[#ffffff]  flex justify-between w-full  border  rounded-lg hover:shadow-md hover:bg-gray-100 transition duration-300 ease-in-out border-solid border-red-400 border-r-4 '>
                 <div className='flex flex-col  justify-center w-full m-4 '>
-                    <p className='text-sm font-bold text-gray-600'>Today's Visitors</p>
+                    <p className='text-sm font-bold text-gray-600'>Todays Visitors</p>
                     <div className='flex w-auto h-1 mt-2'>
                         <div className='bg-red-200 w-1/3 h-1'></div>
                         <div className='bg-gray-50 w-2/3 h-1'></div>

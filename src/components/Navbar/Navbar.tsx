@@ -17,7 +17,7 @@ import profilepivc from "../../../public/image/autquiaut.png";
 import insure from "../../../public/image/group.png";
 import Image from "next/image";
 import { useRouter } from 'next/navigation';
-import { useProSidebar } from 'react-pro-sidebar';
+
 
 export default function Navbar() {
 	const router = useRouter();

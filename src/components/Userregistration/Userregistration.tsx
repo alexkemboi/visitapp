@@ -1,7 +1,7 @@
 // components/user.tsx
 import { useState } from 'react';
 
-export default function userregistration() {
+export default function Userregistration() {
     const [formData, setFormData] = useState({
         firstName: '',
         lastName: '',

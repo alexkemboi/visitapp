@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import { Sidebar, Menu, SubMenu, MenuItem, sidebarClasses, useProSidebar } from "react-pro-sidebar";
+import { Sidebar, Menu, SubMenu, MenuItem, sidebarClasses } from "react-pro-sidebar";
 import AssignmentTurnedInIcon from '@mui/icons-material/AssignmentTurnedIn';
 import PaymentIcon from '@mui/icons-material/Payment';
 import GavelIcon from '@mui/icons-material/Gavel';
